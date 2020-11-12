@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potacsio Potatoes</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> 
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+</head>
+<body class="size-1140">
+  <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">    
+        
+    <nav class="background-transparent background-transparent-hightlight full-width sticky">
+      <div class="s-12 l-2">
+        <a href="index.html" class="logo">
+          <img class="logo-before" src="papas/logo2.jpeg" alt="">
+
+        </a>
+      </div>
+      <div class="s-12 l-10">
+        <div class="top-nav right">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">Sobre Nosotros</a></li>             
+ 
+          </ul>
+        </div>
+      </div>  
+    </nav>
+  </header>
+
+  <br>
+  <br>
+
+  
+    <div id='wrapper'>
+        <form action='BaseForm.php' class='form' method="POST">
+          <p class='field required half'>
+            <label class='label required' for='nombre'>Nombre</label>
+            <br>
+            <input class='text-input' id='nombre' name='nombre' required type='text'>
+          </p>
+
+          <p class='field required half'>
+            <label class='label' for='apellido'>Apellido</label>
+            <br>
+            <input class='text-input' id='apellido' name='apellido' required type='text'>
+          </p>
+
+          <p class='field'>
+            <label class='label' for='direccion'>Dirección</label>
+            <br>
+            <input class='text-input' id='direccion' name='direccion' required type='text'>
+          </p>
+
+          <p class='field'>
+            <label class='label' for='tipopago'>Tipo de Pago</label>
+            <br>
+            <input class='text-input' id='tipopago' name='tipopago' required type='text'>
+            <label><input type="checkbox" id="cbox1" value="first_checkbox" disabled> Tarjeta</label><br>
+          <input type="checkbox" id="cbox2" value="second_checkbox" disabled> <label for="cbox2">Efectivo</label>
+          </p>
+
+          <p class='field'>
+            <label class='label' for='correo'>E-mail</label>
+            <br>
+            <input class='text-input' id='correo' name='correo' required type='email'>
+          </p>
+
+          <p class='field'>
+            <label class='label' for='message'>Pedido</label>
+            <br>
+            <textarea class='textarea' cols='50' id='pedido' name='pedido' required rows='4'></textarea>
+          </p>
+          <p class='field'>
+            <input class='button' type='submit' value='Realizar pedido'>
+          </p>
+        </form>
+      </div>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="js/jquery.events.touch.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>  
+</body>
+</html>
